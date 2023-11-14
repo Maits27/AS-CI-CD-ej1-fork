@@ -1,0 +1,13 @@
+name: Mi workflow
+
+on: push
+
+jobs:
+  tareas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ej1
+        run: |
+          pip install pytest
+          pytest test.py
+        
